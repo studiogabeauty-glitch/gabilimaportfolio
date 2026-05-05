@@ -1,5 +1,7 @@
 $ cat /home/user/lehua12/script.js
 
+document.documentElement.classList.add('js-ready');
+
 /* =============================================
    CUSTOM CURSOR
    ============================================= */
