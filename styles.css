@@ -240,12 +240,12 @@ img { max-width: 100%; display: block; }
 
 /* ─── REVEAL ─── */
 .reveal-up, .reveal-left, .reveal-right {
-  opacity: 0; transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
+  transition: opacity 0.8s var(--ease), transform 0.8s var(--ease);
 }
-.reveal-up { transform: translateY(50px); }
-.reveal-left { transform: translateX(-60px); }
-.reveal-right { transform: translateX(60px); }
-.reveal-up.visible, .reveal-left.visible, .reveal-right.visible { opacity: 1; transform: translate(0); }
+.js-ready .reveal-up { opacity: 0; transform: translateY(50px); }
+.js-ready .reveal-left { opacity: 0; transform: translateX(-60px); }
+.js-ready .reveal-right { opacity: 0; transform: translateX(60px); }
+.reveal-up.visible, .reveal-left.visible, .reveal-right.visible { opacity: 1 !important; transform: translate(0) !important; }
 [style*="--delay"] { transition-delay: var(--delay); }
 
 /* ─── SECTION COMMON ─── */
